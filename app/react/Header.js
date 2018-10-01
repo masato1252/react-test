@@ -16,7 +16,8 @@ class Header extends Component {
 			        <div className="col-xs-12">
 			            <Link to="/">TEST APP</Link>　　
 			            <Link to="/todo1">TODOリスト１</Link>　　
-			            <Link to="/todo2">TODOリスト２</Link>
+			            <Link to="/todo2">TODOリスト２</Link>　　
+			            <Link to="/todo3">TODOリスト(Redux版)</Link>
 			        </div>
 			    </div>
 			</div>

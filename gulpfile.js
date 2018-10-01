@@ -116,7 +116,7 @@ gulp.task('watch', function () {
     gulp.watch(['./app/views/**/*.ejs','./app/views/partial/*.ejs'],['ejs']);
     gulp.watch("./app/**/*.scss", ['sass']);
     gulp.watch("./app/javascripts/*.js", ['jsmin']);
-    gulp.watch("./app/react/*.js", ['react']);
+    gulp.watch(["./app/react/*.js","./app/react/*/*.js","./app/react/*/*/*.js","./app/react/*/*/*/*.js"] , ['react']);
 });
 
 /*--------------------- default [gulp] --------------------*/

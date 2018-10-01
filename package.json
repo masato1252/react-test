@@ -19,8 +19,8 @@
     "babel": "^6.23.0",
     "babelify": "^8.0.0",
     "browser-sync": "^2.24.7",
-    "browserify": "^16.2.2",
-    "firebase": "^5.5.1",
+    "browserify": "^16.2.3",
+    "firebase": "^5.5.2",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
     "gulp-babel": "^8.0.0",
@@ -36,8 +36,11 @@
     "imagemin-mozjpeg": "^7.0.0",
     "imagemin-pngquant": "^6.0.0",
     "merge-stream": "^1.0.1",
+    "react-redux": "^5.0.7",
     "react-router-dom": "^4.3.1",
     "reactify": "^1.1.1",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
     "vinyl-source-stream": "^2.0.0"
   }
 }
