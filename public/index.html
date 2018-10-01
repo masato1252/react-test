@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <!--include head-->
+  <!DOCTYPE html>
+<html lang="ja">
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title></title>
+
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+
+<script>
+if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+        //iPhone、iPod、Androidの設定
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,user-scalable=no">');
+    }else{
+        //それ以外（PC、iPadなど）の設定
+        document.write('');
+    }
+</script>
+
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+<!-- //CSS -->
+
+<!-- font-awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+<!-- //font-awesome -->
+
+<!-- webfont -->
+
+<!-- //webfont -->
+
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+window.jQuery || document.write('<script src="/js/jquery-2.1.4.min.js"><\/script>')
+</script>
+<!-- //jQuery -->
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/common.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/marked/0.3.2/marked.min.js"></script>
+
+</head>
+  <!--// include head end-->
+
+  <body>
+
+  <div id="Page">
+
+    <!--==========================
+    Content
+    ============================-->
+    <div id="Content" class="cf">
+
+      <div id="Main" class="top" role="main">
+
+        <section id="Sec01">
+          <div id="root"></div>
+          <!-- <div id="todo"></div> -->
+          <!-- <div id="todo2"></div> -->
+          <script src="/scripts/index.js"></script>
+        </section><!-- // #Sec01 -->
+
+      </div><!-- // #Main -->
+
+    </div><!-- // #Content -->
+
+    <!--include footer-->
+    <!--==========================
+Footer
+============================-->
+<footer id="Footer" role="contentinfo">
+	<!-- コピーライト -->
+	<p class="copy eng">
+		&copy; VEX
+	</p>
+	<!-- //コピーライト -->
+</footer><!-- // #Footer 
+    <!--// #Footer-->
+
+  </div><!-- // #Page -->
+
+  </body>
+</html>

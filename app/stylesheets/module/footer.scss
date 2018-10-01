@@ -1,0 +1,19 @@
+
+#Page {
+	position: relative;
+}
+
+#Footer {
+
+	p.copy {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		border-top: dashed 2px #000000;
+		background-color: #F4F4F4;
+		text-align: center;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	
+}
