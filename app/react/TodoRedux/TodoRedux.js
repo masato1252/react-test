@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { firebaseDb } from '../firebase.js';
-import Header from '../Header'
+import { withRouter } from "react-router";
 
 import { connect } from 'react-redux';
 import * as actions from './redux/actionCreators';
 
+import Header from '../Header';
 import TodoList from './component/TodoList';
 import Form from './component/Form';
 
@@ -60,5 +61,5 @@ const mapDispatchToProps = dispatch => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(TodoApp)
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(TodoApp))
 
