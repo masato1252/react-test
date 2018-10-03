@@ -5,14 +5,52 @@ import { firebaseDb } from '../../firebase.js';
 const todoRef = firebaseDb.collection('todo2');
 
 
-const initialState = {
-  todo: [],
-  id: 0,
-  mode: 0
+const initialStateAuth = {
+  currentUser: {
+    user_id: "",
+    user_name: "",
+    email: "",
+    isLoggedIn: false
+  }
 }
 
+const initialStateTodo = {
+  todo: [],
+  id: 0,
+  mode: 0,
+}
 
-export const todoReducer = (state = initialState, action) => {
+export const authReducer = (state = initialStateAuth, action) => {
+  
+  let newState = Object.assign({}, state);
+
+  switch (action.type) {
+
+    case actionType.LOGIN_OK:
+      newState.currentUser.user_id = action.payload.user.uid;
+      newState.currentUser.user_name = action.payload.user.displayName;
+      newState.currentUser.email = action.payload.user.email;
+      newState.currentUser.isLoggedIn = true;
+
+      return newState;
+
+    case actionType.LOGOUT:
+      newState.currentUser.user_id = "";
+      newState.currentUser.user_name = "";
+      newState.currentUser.email = "";
+      newState.currentUser.isLoggedIn = false;
+
+      return newState;
+
+    default:
+
+      return state;
+
+  }
+
+}
+
+export const todoReducer = (state = initialStateTodo, action) => {
 
   let newState = Object.assign({}, state);
   let id = 0;

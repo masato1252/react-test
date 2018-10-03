@@ -1,6 +1,8 @@
 import * as actionType from './actionTypes'
 
-// Action Creator
+//-------------------
+//  Todo
+//-------------------
 export function addTodo(todo) {
   // Action
   return {
@@ -33,4 +35,21 @@ export function updateTodo(snap) {
     type: actionType.UPDATE,
     payload: { snap: snap }
   };
+}
+
+//-------------------
+//  Auth
+//-------------------
+
+export function loginOk(user) {
+  return {
+    type: actionType.LOGIN_OK,
+    payload: { user: user }
+  }
+}
+
+export function logOut() {
+  return{
+    type: actionType.LOGOUT
+  }
 }

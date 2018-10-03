@@ -50,7 +50,7 @@ const mapStateToProps = state => {
   // return {
   //   todo: state.todo
   // }
-  return state;
+  return state.todo;
 }
 
 const mapDispatchToProps = dispatch => {

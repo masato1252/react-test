@@ -19,6 +19,8 @@ var browserify = require('browserify');
 var babelify = require('babelify');
 var source = require('vinyl-source-stream');
 
+var historyApi = require('connect-history-api-fallback');
+
 var config = {
   watchFiles: './app/react/*.js',
   entryFile: './app/react/index.js',
@@ -103,6 +105,7 @@ gulp.task("server", function() {
     browser({
         server: {
             baseDir: ["./public/"],
+            middleware: [historyApi()]
         },
 
          ghostMode: {

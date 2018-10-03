@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { firebaseDb } from '../firebase.js';
-import { withRouter } from "react-router";
+import { withRouter } from "react-router-dom";
 
 import { connect } from 'react-redux';
 import * as actions from './redux/actionCreators';
@@ -52,7 +52,7 @@ class TodoApp extends Component {
 }
 
 function mapStateToProps(state) {
-  return state
+  return state.todo
 }
 
 const mapDispatchToProps = dispatch => {
